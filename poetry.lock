@@ -35,6 +35,21 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-cors-headers"
+version = "4.6.0"
+description = "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "django_cors_headers-4.6.0-py3-none-any.whl", hash = "sha256:8edbc0497e611c24d5150e0055d3b178c6534b8ed826fb6f53b21c63f5d48ba3"},
+    {file = "django_cors_headers-4.6.0.tar.gz", hash = "sha256:14d76b4b4c8d39375baeddd89e4f08899051eeaf177cb02a29bd6eae8cf63aa8"},
+]
+
+[package.dependencies]
+asgiref = ">=3.6"
+django = ">=4.2"
+
+[[package]]
 name = "django-phonenumber-field"
 version = "8.0.0"
 description = "An international phone number field for django models."
@@ -338,4 +353,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "ed5af1b9d1213e317cc737f16ef74796373bb6d1c8ddde4598aae63d97647f9c"
+content-hash = "e31ee55a043eb467d1c86910499bfb55e54176412c546fe0a29dd42906b465c2"
