@@ -1,7 +1,7 @@
 from django.core.validators import MaxValueValidator, MinValueValidator
 from rest_framework import serializers
 
-from tracker.models import UsefulHabit, PleasantHabit
+from tracker.models import PleasantHabit, UsefulHabit
 
 
 class UsefulHabitSerializer(serializers.ModelSerializer):

@@ -2,8 +2,8 @@ from django.urls import path
 from rest_framework.routers import DefaultRouter
 
 from tracker.apps import TrackerConfig
-from tracker.views import (PleasantHabitViewSet, UsefulHabitCreateView, UsefulHabitDeleteView, UsefulHabitDetailView,
-                           UsefulHabitListView, UsefulHabitUpdateView, PublishedUsefulHabitListView)
+from tracker.views import (PleasantHabitViewSet, PublishedUsefulHabitListView, UsefulHabitCreateView,
+                           UsefulHabitDeleteView, UsefulHabitDetailView, UsefulHabitListView, UsefulHabitUpdateView)
 
 app_name = TrackerConfig.name
 

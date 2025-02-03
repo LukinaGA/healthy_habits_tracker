@@ -25,7 +25,7 @@ class UsefulHabit(models.Model):
     related_habit = models.ForeignKey(PleasantHabit, on_delete=models.SET_NULL, verbose_name="Связанная привычка",
                                       help_text="Выберите связанную привычку", null=True, blank=True)
     periodicity = models.IntegerField(verbose_name="Периодичность",
-                                              help_text="Укажите периодичность выполнения в днях", default=1)
+                                      help_text="Укажите периодичность выполнения в днях", default=1)
     award = models.CharField(max_length=255, verbose_name="Вознаграждение", help_text="Укажите вознаграждение",
                              null=True, blank=True)
     duration = models.IntegerField(verbose_name="Продолжительность", help_text="Укажите продолжительность в секундах")

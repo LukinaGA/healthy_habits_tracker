@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from tracker.models import UsefulHabit, PleasantHabit
+from tracker.models import PleasantHabit, UsefulHabit
 
 
 @admin.register(UsefulHabit)
