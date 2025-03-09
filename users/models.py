@@ -11,7 +11,8 @@ class User(AbstractUser):
     avatar = models.ImageField(
         upload_to="users/avatars/", blank=True, null=True, verbose_name="Аватар", help_text="Загрузите аватар"
     )
-    phone_number = PhoneNumberField(blank=True, null=True, verbose_name="Телефон", help_text="Введите номер телефона", max_length=12)
+    phone_number = PhoneNumberField(blank=True, null=True, verbose_name="Телефон", help_text="Введите номер телефона",
+                                    max_length=12)
     city = models.CharField(max_length=50, blank=True, null=True, verbose_name="Город", help_text="Введите город")
 
     USERNAME_FIELD = "email"
