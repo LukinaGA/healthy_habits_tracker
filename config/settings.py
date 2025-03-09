@@ -80,6 +80,7 @@ else:
             'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
             'HOST': os.getenv('DATABASE_HOST'),
             'PORT': os.getenv('POSTGRES_PORT'),
+            "OPTIONS": {"client_encoding": "utf8", },
         }
     }
 
